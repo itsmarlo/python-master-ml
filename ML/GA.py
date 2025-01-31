@@ -93,7 +93,7 @@ def genetic_algorithm(population_size, lower_bound, upper_bound, generations, mu
             next_population.append(mutation(child1, mutation_rate, lower_bound, upper_bound))
             next_population.append(mutation(child2, mutation_rate, lower_bound, upper_bound))
 
-        # Replace the old population with the new one, preserving the best individual
+        # Replace the old population with the new one, preserving the best individual 
         next_population[0] = best_individual
         population = next_population
 
